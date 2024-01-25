@@ -10,7 +10,7 @@ const currentYear = currentTime.getFullYear();
 const calculatingAge = () => {
     const userAgeValue = Number(userAge.value);
     
-    if (firstName.value === '' && lastName.value === '') {
+    if (firstName.value === '' || lastName.value === '') {
         // alert('Iltimos Ismingizni Kiriting!');
         error.classList.add('error')
         error.textContent = 'Iltimos Ismingizni Kiriting!'
